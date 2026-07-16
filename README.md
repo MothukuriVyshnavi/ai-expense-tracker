@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💰 AI Expense Tracker
 
 An AI-powered Expense Tracker built using the MERN Stack that helps users manage their finances efficiently. The application allows users to track income and expenses, analyze spending patterns using AI, set budgets, and generate insightful financial reports.
@@ -183,3 +184,6 @@ GitHub: https://github.com/MothukuriVyshnavi
 ## 📄 License
 
 This project is licensed under the MIT License.
+=======
+# ai-expense-tracker
+>>>>>>> ec6091b0a0144912fd44686dd8262e8272421b62
