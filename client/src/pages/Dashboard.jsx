@@ -53,7 +53,7 @@ function Dashboard() {
           </div>
 
           <div className="flex justify-between border-b pb-2">
-            <span>🛍 Shopping</span>
+            <span>Shopping</span>
             <span className="text-red-500">- ₹1200</span>
           </div>
 

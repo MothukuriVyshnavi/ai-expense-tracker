@@ -1,39 +1,31 @@
 import { Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import MainLayout from "./layouts/MainLayout";
 
 import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <>
-      {/* Navigation Bar */}
-      <Navbar />
-
-      {/* Application Routes */}
-      <Routes>
+    <Routes>
+      {/* Pages that use Navbar + Footer */}
+      <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
-
-        <Route path="/login" element={<Login />} />
-
-        <Route path="/register" element={<Register />} />
-
         <Route path="/dashboard" element={<Dashboard />} />
-
         <Route path="/profile" element={<Profile />} />
+      </Route>
 
-        {/* 404 Page */}
-        <Route path="*" element={<NotFound />} />
-        
-      </Routes>
-      <Footer />
-    </>
+      {/* Authentication Pages */}
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+
+      {/* 404 Page */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 
