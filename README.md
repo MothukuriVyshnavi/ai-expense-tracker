@@ -1,13 +1,13 @@
 <<<<<<< HEAD
-# 💰 AI Expense Tracker
+# AI Expense Tracker
 
 An AI-powered Expense Tracker built using the MERN Stack that helps users manage their finances efficiently. The application allows users to track income and expenses, analyze spending patterns using AI, set budgets, and generate insightful financial reports.
 
 ---
 
-## 🚀 Project Status
+## Project Status
 
-**Current Progress:** Day 1 – Project Setup ✅
+**Current Progress:** Day 1 – Project Setup 
 
 Completed:
 - GitHub repository created
@@ -19,7 +19,7 @@ Completed:
 
 ---
 
-## 📌 Features (Planned)
+## Features (Planned)
 
 ### User Authentication
 - User Registration
@@ -58,7 +58,7 @@ Completed:
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 - React.js (Vite)
@@ -84,7 +84,7 @@ Completed:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ai-expense-tracker/
@@ -106,7 +106,7 @@ ai-expense-tracker/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### Clone the Repository
 
@@ -132,7 +132,7 @@ npm run dev
 
 ---
 
-## 🔑 Environment Variables
+## Environment Variables
 
 Create a `.env` file inside the `server` folder.
 
@@ -144,26 +144,24 @@ JWT_SECRET=your_secret_key
 
 ---
 
-## 📅 Development Progress
+## Development Progress
 
 | Day | Feature | Status |
 |------|---------|--------|
 | Day 1 | Project Setup | ✅ Completed |
-| Day 2 | UI Foundation | 🔜 Upcoming |
-| Day 3 | Authentication UI | 🔜 Upcoming |
-| Day 4 | Authentication Backend | 🔜 Upcoming |
-| Day 5 | Database Models | 🔜 Upcoming |
-| Day 6 | Dashboard | 🔜 Upcoming |
-| Day 7 | Review & Refactoring | 🔜 Upcoming |
-| Day 8 | Expense CRUD | 🔜 Upcoming |
-| Day 9 | Categories | 🔜 Upcoming |
-| Day 10 | Budget Module | 🔜 Upcoming |
-...
-| Day 30 | Final Release | 🔜 Upcoming |
+| Day 2 | UI Foundation | Upcoming |
+| Day 3 | Authentication UI | Upcoming |
+| Day 4 | Authentication Backend | Upcoming |
+| Day 5 | Database Models | Upcoming |
+| Day 6 | Dashboard | Upcoming |
+| Day 7 | Review & Refactoring | Upcoming |
+| Day 8 | Expense CRUD | Upcoming |
+| Day 9 | Categories | Upcoming |
+| Day 10 | Budget Module | Upcoming |
 
 ---
 
-## 🎯 Project Goals
+## Project Goals
 
 - Build a complete AI-powered Expense Tracker.
 - Learn full-stack MERN development.
@@ -173,7 +171,7 @@ JWT_SECRET=your_secret_key
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Mothukuri Naga Sai Vyshnavi**
 
@@ -181,7 +179,7 @@ GitHub: https://github.com/MothukuriVyshnavi
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 =======
