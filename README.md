@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AI Expense Tracker
 
 An AI-powered Expense Tracker built using the MERN Stack that helps users manage their finances efficiently. The application allows users to track income and expenses, analyze spending patterns using AI, set budgets, and generate insightful financial reports.
@@ -7,91 +6,139 @@ An AI-powered Expense Tracker built using the MERN Stack that helps users manage
 
 ## Project Status
 
-**Current Progress:** Day 1 – Project Setup 
+**Current Progress:** Day 2 – UI Foundation Completed
 
 Completed:
-- GitHub repository created
-- React (Vite) frontend initialized
-- Express.js backend initialized
-- MongoDB Atlas setup
-- Basic project structure created
-- Initial README added
+
+### Day 1 – Project Setup
+
+* GitHub repository created
+* React (Vite) frontend initialized
+* Express.js backend initialized
+* MongoDB Atlas setup
+* Basic project structure created
+* Initial README added
+
+### Day 2 – UI Foundation
+
+* Tailwind CSS configured
+* React Router DOM integrated
+* Responsive Navbar created
+* Responsive Footer created
+* Dashboard UI created
+* Reusable Card component developed
+* Main Layout implemented
+* Dashboard summary cards added
+* Recent Transactions section created (Static)
+* Expense Overview placeholder added
+* Responsive layout completed
 
 ---
 
 ## Features (Planned)
 
 ### User Authentication
-- User Registration
-- User Login
-- JWT Authentication
-- Password Encryption (bcrypt)
-- Forgot Password
+
+* User Registration
+* User Login
+* JWT Authentication
+* Password Encryption (bcrypt)
+* Forgot Password
 
 ### Expense Management
-- Add Expenses
-- Edit Expenses
-- Delete Expenses
-- View Expense History
-- Income Tracking
+
+* Add Expenses
+* Edit Expenses
+* Delete Expenses
+* View Expense History
+* Income Tracking
 
 ### Budget Management
-- Monthly Budget
-- Budget Progress
-- Budget Alerts
+
+* Monthly Budget
+* Budget Progress
+* Budget Alerts
 
 ### AI Features
-- Natural Language Expense Entry
-- Spending Analysis
-- Personalized Savings Suggestions
-- AI Monthly Financial Summary
+
+* Natural Language Expense Entry
+* Spending Analysis
+* Personalized Savings Suggestions
+* AI Monthly Financial Summary
 
 ### Reports
-- Charts and Graphs
-- CSV Export
-- PDF Reports
+
+* Charts and Graphs
+* CSV Export
+* PDF Reports
 
 ### User Settings
-- Profile Management
-- Theme Settings
-- Notifications
+
+* Profile Management
+* Theme Settings
+* Notifications
 
 ---
 
 ## Tech Stack
 
 ### Frontend
-- React.js (Vite)
-- React Router DOM
-- Axios
-- Tailwind CSS
+
+* React.js (Vite)
+* React Router DOM
+* Tailwind CSS
+* Axios
 
 ### Backend
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- JWT Authentication
-- bcrypt
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
+* bcrypt
 
 ### AI
-- Google Gemini API
+
+* Google Gemini API
 
 ### Deployment
-- Frontend: Vercel
-- Backend: Render
-- Database: MongoDB Atlas
+
+* Frontend: Vercel
+* Backend: Render
+* Database: MongoDB Atlas
 
 ---
 
 ## Project Structure
 
-```
+```text
 ai-expense-tracker/
 │
-├── client/                 # React Frontend
+├── client/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   └── Card.jsx
+│   │   ├── layouts/
+│   │   │   └── MainLayout.jsx
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   ├── Profile.jsx
+│   │   │   └── NotFound.jsx
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   ├── package.json
+│   └── vite.config.js
 │
-├── server/                 # Express Backend
+├── server/
 │   ├── config/
 │   ├── controllers/
 │   ├── middleware/
@@ -111,7 +158,7 @@ ai-expense-tracker/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ai-expense-tracker.git
+git clone https://github.com/MothukuriVyshnavi/ai-expense-tracker.git
 ```
 
 ### Frontend Setup
@@ -146,28 +193,48 @@ JWT_SECRET=your_secret_key
 
 ## Development Progress
 
-| Day | Feature | Status |
-|------|---------|--------|
-| Day 1 | Project Setup | ✅ Completed |
-| Day 2 | UI Foundation | Upcoming |
-| Day 3 | Authentication UI | Upcoming |
-| Day 4 | Authentication Backend | Upcoming |
-| Day 5 | Database Models | Upcoming |
-| Day 6 | Dashboard | Upcoming |
-| Day 7 | Review & Refactoring | Upcoming |
-| Day 8 | Expense CRUD | Upcoming |
-| Day 9 | Categories | Upcoming |
-| Day 10 | Budget Module | Upcoming |
+| Day    | Feature                 | Status    |
+| ------ | ----------------------- | --------- |
+| Day 1  | Project Setup           | Completed |
+| Day 2  | UI Foundation           | Completed |
+| Day 3  | Authentication UI       | Upcoming  |
+| Day 4  | Authentication Backend  | Upcoming  |
+| Day 5  | Database Models         | Upcoming  |
+| Day 6  | Dashboard Enhancements  | Upcoming  |
+| Day 7  | Review & Refactoring    | Upcoming  |
+| Day 8  | Expense CRUD            | Upcoming  |
+| Day 9  | Categories              | Upcoming  |
+| Day 10 | Budget Module           | Upcoming  |
+| Day 11 | Transactions            | Upcoming  |
+| Day 12 | Charts                  | Upcoming  |
+| Day 13 | Dashboard Improvements  | Upcoming  |
+| Day 14 | Testing                 | Upcoming  |
+| Day 15 | AI Integration          | Upcoming  |
+| Day 16 | Natural Language Input  | Upcoming  |
+| Day 17 | AI Insights             | Upcoming  |
+| Day 18 | Budget Alerts           | Upcoming  |
+| Day 19 | Monthly Report          | Upcoming  |
+| Day 20 | Receipt OCR             | Upcoming  |
+| Day 21 | AI Improvements         | Upcoming  |
+| Day 22 | CSV Export              | Upcoming  |
+| Day 23 | PDF Reports             | Upcoming  |
+| Day 24 | Notifications           | Upcoming  |
+| Day 25 | User Settings           | Upcoming  |
+| Day 26 | Responsive Optimization | Upcoming  |
+| Day 27 | Testing & Bug Fixes     | Upcoming  |
+| Day 28 | Deployment              | Upcoming  |
+| Day 29 | Documentation           | Upcoming  |
+| Day 30 | Final Release           | Upcoming  |
 
 ---
 
 ## Project Goals
 
-- Build a complete AI-powered Expense Tracker.
-- Learn full-stack MERN development.
-- Integrate AI using Google Gemini.
-- Deploy the application.
-- Create a portfolio-ready project for internships and placements.
+* Build a complete AI-powered Expense Tracker.
+* Learn full-stack MERN development.
+* Integrate AI using Google Gemini.
+* Deploy the application.
+* Create a portfolio-ready project for internships and placements.
 
 ---
 
@@ -182,6 +249,3 @@ GitHub: https://github.com/MothukuriVyshnavi
 ## License
 
 This project is licensed under the MIT License.
-=======
-# ai-expense-tracker
->>>>>>> ec6091b0a0144912fd44686dd8262e8272421b62
