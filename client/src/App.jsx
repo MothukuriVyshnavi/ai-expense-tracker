@@ -7,24 +7,25 @@ import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
+import ForgotPassword from "./pages/ForgotPassword";
 import NotFound from "./pages/NotFound";
 
 function App() {
   return (
     <Routes>
-      {/* Pages that use Navbar + Footer */}
+
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/profile" element={<Profile />} />
       </Route>
 
-      {/* Authentication Pages */}
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/forgot-password" element={<ForgotPassword />} />
 
-      {/* 404 Page */}
       <Route path="*" element={<NotFound />} />
+
     </Routes>
   );
 }
