@@ -4,7 +4,48 @@ import { Link } from "react-router-dom";
 function Login() {
 
   const [showPassword, setShowPassword] = useState(false);
+  const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
 
+const [errors, setErrors] = useState({});
+const validate = () => {
+
+    let newErrors = {};
+
+    if(!email){
+
+        newErrors.email="Email is required";
+
+    }
+
+    else if(
+        !/\S+@\S+\.\S+/.test(email)
+    ){
+
+        newErrors.email="Invalid email";
+
+    }
+
+    if(!password){
+
+        newErrors.password="Password is required";
+
+    }
+
+    setErrors(newErrors);
+
+    return Object.keys(newErrors).length===0;
+
+}
+const handleSubmit = (e) => {
+
+    e.preventDefault();
+
+    if (validate()) {
+        alert("Login Successful (UI Only)");
+    }
+
+};
   return (
 
     <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
@@ -27,7 +68,7 @@ function Login() {
 
         {/* Login Form */}
 
-        <form>
+        <form onSubmit={handleSubmit}>
 
           {/* Email */}
 
@@ -38,10 +79,19 @@ function Login() {
             </label>
 
             <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
+    type="email"
+    placeholder="Enter your email"
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
+    className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+/>
+{
+    errors.email && (
+        <p className="text-red-500 text-sm mt-1">
+            {errors.email}
+        </p>
+    )
+}
 
           </div>
 
@@ -55,11 +105,20 @@ function Login() {
 
             <div className="relative">
 
-              <input
-                type={showPassword ? "text" : "password"}
-                placeholder="Enter your password"
-                className="w-full border rounded-lg px-4 py-3 pr-20 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
+            <input
+    type={showPassword ? "text" : "password"}
+    placeholder="Enter your password"
+    value={password}
+    onChange={(e) => setPassword(e.target.value)}
+    className="w-full border rounded-lg px-4 py-3 pr-20 focus:outline-none focus:ring-2 focus:ring-blue-500"
+/>
+{
+    errors.password && (
+        <p className="text-red-500 text-sm mt-1">
+            {errors.password}
+        </p>
+    )
+}
 
               <button
                 type="button"
