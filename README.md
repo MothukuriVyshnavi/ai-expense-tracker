@@ -6,9 +6,9 @@ An AI-powered Expense Tracker built using the MERN Stack that helps users manage
 
 ## Project Status
 
-**Current Progress:** Day 2 – UI Foundation Completed
+**Current Progress:** Day 3 – Authentication UI Completed
 
-Completed:
+### Completed
 
 ### Day 1 – Project Setup
 
@@ -16,36 +16,43 @@ Completed:
 * React (Vite) frontend initialized
 * Express.js backend initialized
 * MongoDB Atlas setup
-* Basic project structure created
-* Initial README added
+* Initial project structure created
+* Initial README file created
 
 ### Day 2 – UI Foundation
 
 * Tailwind CSS configured
-* React Router DOM integrated
-* Responsive Navbar created
-* Responsive Footer created
-* Dashboard UI created
-* Reusable Card component developed
-* Main Layout implemented
-* Dashboard summary cards added
-* Recent Transactions section created (Static)
-* Expense Overview placeholder added
-* Responsive layout completed
+* React Router DOM configured
+* Navigation Bar created
+* Footer created
+* Dashboard layout created
+* Responsive layout structure added
+
+### Day 3 – Authentication UI
+
+* Login page created
+* Register page created
+* Forgot Password page created
+* Client-side form validation implemented
+* Show/Hide password functionality
+* Navigation between authentication pages
+* Responsive authentication pages
+* Authentication UI tested
 
 ---
 
-## Features (Planned)
+## Features
 
 ### User Authentication
 
-* User Registration
-* User Login
-* JWT Authentication
-* Password Encryption (bcrypt)
-* Forgot Password
+* User Registration (UI)
+* User Login (UI)
+* Forgot Password (UI)
+* Form Validation
+* Show/Hide Password
+* Responsive Authentication Pages
 
-### Expense Management
+### Expense Management (Planned)
 
 * Add Expenses
 * Edit Expenses
@@ -53,26 +60,26 @@ Completed:
 * View Expense History
 * Income Tracking
 
-### Budget Management
+### Budget Management (Planned)
 
 * Monthly Budget
 * Budget Progress
 * Budget Alerts
 
-### AI Features
+### AI Features (Planned)
 
 * Natural Language Expense Entry
 * Spending Analysis
 * Personalized Savings Suggestions
 * AI Monthly Financial Summary
 
-### Reports
+### Reports (Planned)
 
 * Charts and Graphs
 * CSV Export
 * PDF Reports
 
-### User Settings
+### User Settings (Planned)
 
 * Profile Management
 * Theme Settings
@@ -95,14 +102,12 @@ Completed:
 * Express.js
 * MongoDB
 * Mongoose
-* JWT Authentication
-* bcrypt
 
-### AI
+### AI (Planned)
 
 * Google Gemini API
 
-### Deployment
+### Deployment (Planned)
 
 * Frontend: Vercel
 * Backend: Render
@@ -121,30 +126,22 @@ ai-expense-tracker/
 │   │   ├── assets/
 │   │   ├── components/
 │   │   │   ├── Navbar.jsx
-│   │   │   ├── Footer.jsx
-│   │   │   └── Card.jsx
-│   │   ├── layouts/
-│   │   │   └── MainLayout.jsx
+│   │   │   └── Footer.jsx
 │   │   ├── pages/
 │   │   │   ├── Home.jsx
 │   │   │   ├── Dashboard.jsx
 │   │   │   ├── Login.jsx
 │   │   │   ├── Register.jsx
+│   │   │   ├── ForgotPassword.jsx
 │   │   │   ├── Profile.jsx
 │   │   │   └── NotFound.jsx
 │   │   ├── App.jsx
 │   │   ├── main.jsx
 │   │   └── index.css
-│   ├── package.json
-│   └── vite.config.js
 │
 ├── server/
-│   ├── config/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
 │   ├── server.js
+│   ├── package.json
 │   └── .env
 │
 ├── README.md
@@ -153,15 +150,53 @@ ai-expense-tracker/
 
 ---
 
+## Completed Pages
+
+### Home
+
+* Landing page
+
+### Dashboard
+
+* Dashboard layout
+
+### Login
+
+* Email field
+* Password field
+* Show/Hide password
+* Client-side validation
+* Navigation to Register
+* Navigation to Forgot Password
+
+### Register
+
+* Name field
+* Email field
+* Password field
+* Confirm Password field
+* Terms & Conditions checkbox
+* Client-side validation
+* Show/Hide password
+* Navigation to Login
+
+### Forgot Password
+
+* Email field
+* Validation
+* Back to Login navigation
+
+---
+
 ## Installation
 
-### Clone the Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/MothukuriVyshnavi/ai-expense-tracker.git
 ```
 
-### Frontend Setup
+### Frontend
 
 ```bash
 cd client
@@ -169,7 +204,7 @@ npm install
 npm run dev
 ```
 
-### Backend Setup
+### Backend
 
 ```bash
 cd server
@@ -186,45 +221,59 @@ Create a `.env` file inside the `server` folder.
 ```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
 ```
 
 ---
 
 ## Development Progress
 
-| Day    | Feature                 | Status    |
-| ------ | ----------------------- | --------- |
-| Day 1  | Project Setup           | Completed |
-| Day 2  | UI Foundation           | Completed |
-| Day 3  | Authentication UI       | Upcoming  |
-| Day 4  | Authentication Backend  | Upcoming  |
-| Day 5  | Database Models         | Upcoming  |
-| Day 6  | Dashboard Enhancements  | Upcoming  |
-| Day 7  | Review & Refactoring    | Upcoming  |
-| Day 8  | Expense CRUD            | Upcoming  |
-| Day 9  | Categories              | Upcoming  |
-| Day 10 | Budget Module           | Upcoming  |
-| Day 11 | Transactions            | Upcoming  |
-| Day 12 | Charts                  | Upcoming  |
-| Day 13 | Dashboard Improvements  | Upcoming  |
-| Day 14 | Testing                 | Upcoming  |
-| Day 15 | AI Integration          | Upcoming  |
-| Day 16 | Natural Language Input  | Upcoming  |
-| Day 17 | AI Insights             | Upcoming  |
-| Day 18 | Budget Alerts           | Upcoming  |
-| Day 19 | Monthly Report          | Upcoming  |
-| Day 20 | Receipt OCR             | Upcoming  |
-| Day 21 | AI Improvements         | Upcoming  |
-| Day 22 | CSV Export              | Upcoming  |
-| Day 23 | PDF Reports             | Upcoming  |
-| Day 24 | Notifications           | Upcoming  |
-| Day 25 | User Settings           | Upcoming  |
-| Day 26 | Responsive Optimization | Upcoming  |
-| Day 27 | Testing & Bug Fixes     | Upcoming  |
-| Day 28 | Deployment              | Upcoming  |
-| Day 29 | Documentation           | Upcoming  |
-| Day 30 | Final Release           | Upcoming  |
+| Day    | Feature                | Status    |
+| ------ | ---------------------- | --------- |
+| Day 1  | Project Setup          | Completed |
+| Day 2  | UI Foundation          | Completed |
+| Day 3  | Authentication UI      | Completed |
+| Day 4  | Authentication Backend | Pending   |
+| Day 5  | Database Models        | Pending   |
+| Day 6  | Dashboard Backend      | Pending   |
+| Day 7  | Expense CRUD APIs      | Pending   |
+| Day 8  | Categories             | Pending   |
+| Day 9  | Budget Module          | Pending   |
+| Day 10 | AI Integration         | Pending   |
+
+---
+
+## Current Progress Summary
+
+Completed:
+
+* Project initialization
+* MERN project structure
+* Tailwind CSS setup
+* Navigation Bar
+* Footer
+* Dashboard UI
+* Login UI
+* Register UI
+* Forgot Password UI
+* Form validation
+* Show/Hide password
+* Navigation between authentication pages
+* Responsive design
+* UI testing
+
+---
+
+## Upcoming Tasks
+
+* Build Authentication Backend
+* JWT Authentication
+* Password Encryption using bcrypt
+* MongoDB User Model
+* Expense Management APIs
+* Budget Module
+* AI Integration
+* Reports and Analytics
+* Deployment
 
 ---
 
@@ -242,7 +291,7 @@ JWT_SECRET=your_secret_key
 
 **Mothukuri Naga Sai Vyshnavi**
 
-GitHub: https://github.com/MothukuriVyshnavi
+GitHub: https://github.com/MothukuriVyshnavi/ai-expense-tracker
 
 ---
 
